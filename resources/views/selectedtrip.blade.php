@@ -8,12 +8,8 @@
 				<div class="panel-heading">Home</div>
 
 				<div class="panel-body">
-					@foreach ($trips as $trip)
-					<li>
-					<a href=" {{ url('/trip', $trip->id) }}">{{ $trip->title }}</a>
-					</li>
-					@endforeach
-
+					<p>{{ $select_trip->title }}</p>
+					<li></li>
 				</div>
 			</div>
 		</div>

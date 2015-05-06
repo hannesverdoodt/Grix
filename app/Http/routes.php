@@ -13,7 +13,27 @@
 
 Route::get('/', 'WelcomeController@index');
 
+//home page
 Route::get('home', 'HomeController@index');
+Route::get('home', 'TripsController@index');
+
+//bucket list page
+
+Route::resource('trip', 'TripsController');
+
+
+/*Route::get('trip', 'TripsController@index');
+Route::get('trip/create', 'TripsController@create');
+Route::get('trip/{id}', 'TripsController@show');
+Route::post('trip', 'TripsController@store');*/
+
+//friends
+
+
+
+//planning
+
+
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
