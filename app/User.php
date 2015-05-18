@@ -33,7 +33,13 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 
 	public function trips()
 	{
-		return $this->hasMany('App\Trip')
+		return $this->hasMany('App\Trip');
 	}
+
+	public function Friends()
+	{
+		return $this->hasMany('App\Friend');
+	}
+
 
 }

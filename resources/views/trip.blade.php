@@ -13,7 +13,9 @@
 					<a href=" {{ url('/trip', $trip->id) }}">{{ $trip->title }}</a>
 					</li>
 					@endforeach
+					<a href="{{ url('/trip/create') }}" class="btn btn-info" role="button">Maak trip aan</a>
 				</div>
+
 			</div>
 		</div>
 	</div>

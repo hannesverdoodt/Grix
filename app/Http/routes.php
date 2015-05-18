@@ -11,21 +11,28 @@
 |
 */
 
+// not log in
 Route::get('/', 'WelcomeController@index');
 
 //home page
 Route::get('home', 'HomeController@index');
 Route::get('home', 'TripsController@index');
 
+//add friend
+
+Route::resource('friend', 'FriendsController@addFriends');
+
 //bucket list page
 
 Route::resource('trip', 'TripsController');
+Route::resource('activity', 'ActivitiesController');
 
-
-/*Route::get('trip', 'TripsController@index');
+/*
+Route::get('trip', 'TripsController@index');
 Route::get('trip/create', 'TripsController@create');
 Route::get('trip/{id}', 'TripsController@show');
-Route::post('trip', 'TripsController@store');*/
+Route::post('trip', 'TripsController@store');
+*/
 
 //friends
 

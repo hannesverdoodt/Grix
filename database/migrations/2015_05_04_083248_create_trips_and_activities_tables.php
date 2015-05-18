@@ -41,8 +41,6 @@ class CreateTripsAndActivitiesTables extends Migration {
 			$table->dateTime('end_activity');
 			$table->text('description')->default('');
 			$table->string('imagepath');
-			$table->integer('voteUp');
-			$table->integer('voteDown');
 			$table->timestamps();
 
 		});
